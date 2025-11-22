@@ -9,13 +9,13 @@
 </head>
 <body>
     <!-- Audio files -->
-    <audio id="audio1" src="Music/Ghibli Coffee Shop ☕️ Music to put you in a better mood 🌿 lofi hip hop - lofi songs _ study _ relax [zhDwjnYZiCo].mp3" preload="auto" loop></audio>
-    <audio id="audio2" src="Music/Cheering sound effect free copyright.mp3" preload="auto"></audio>
-    <audio id="audio3" src="Music/Cinematic Romantic Wedding Acoustic Orchestra Piano by Cold Cinema [No Copyright Music]  Waltz.mp3" preload="auto" loop></audio>
+    <audio id="audio1" src="Music/bgm.mp3" preload="auto"></audio>
+    <audio id="audio2" src="Music/cheer.mp3" preload="auto"></audio>
+    <audio id="audio3" src="Music/waltz.mp3" preload="auto"></audio>
 
     <!-- INTRO OVERLAY -->
     <div id="intro-overlay" class="section active">
-        <p>🌸 Tap to Begin the Magic 🌸</p>
+        <p>🌸 Bấm vào đây để nhận phần quà dành riêng cho 杨丽梅🌸</p>
     </div>
 
     <!-- SECTION 1: Cherry Blossoms -->
@@ -32,93 +32,86 @@
         <div class="petal"></div>
 
         <div class="content">
-            <h1>You've been working so hard...</h1>
-            <p class="subtitle">Time for something special ✨</p>
-            <button class="button-link" onclick="goToSection(2)">Click here for a surprise!</button>
+            <h1>Có một cô gái nhỏ bé đã rất chăm chỉ và vất vả rùi...</h1>
+            <p class="subtitle">Thế nên, tui đã chuẩn bị một món quà nho nhỏ dành riêng cho cô ấy 🎁✨</p>
+            <button class="button-link" onclick="goToSection('section2')">Bất ngờ dành riêng cho nàng 🥰</button>
         </div>
     </div>
 
     <!-- SECTION 2: Congratulations -->
     <div id="section2" class="section">
-        <h1>🎉 Congratulations on finishing your exams! 🎉</h1>
-        <p>You did amazing! I'm so proud of you!</p>
-        <p>You have received a voucher for a <span class="rainbow-text">SPECIAL DATE!!!!</span> 💕</p>
-        <button class="button-link" onclick="goToSection(3)">Còn nữa nèee...</button>
+        <div class="glass-card">
+            <h1>🎉 Xin chúc mừng bạn đã xuất sắc hoàn thành các kì thi nhooo 🎉</h1>
+            <p>Bạn thật sự đã cố gắng rất rất là nhiều rùi! Mình cực kỳ tự hào về bạn luôn ý!!</p>
+            <p>Bạn đã phải vừa ôn thi, vừa đi làm, vừa học môn mới, vừa lo công việc gia đình bận rộn. Đã làm top salewoman của công ty nhé, lại luôn giữ vị thế đứng trong top đầu lớp, để cho các tiểu đệ luôn nhìn thấy một chị đại ngầu bá cháy!! 
+                <br>Nhưng mà mình vẫn luôn biết là bạn đã vất vả nhiều thế nào, giấu đi sự mệt mỏi và chán chường nhiều thế nào luôn 🥹. 
+                <br>Cho nên mình muốn nói đơn giản là dù có thế nào sẽ luôn có mình tin tưởng và iu thương bạn nhó 🥹</p>
+            <p>Bạn đã nhận được một voucher đặc biệt cho một buổi <span class="rainbow-text">SPECIAL DATE!!!!</span> 💕</p>
+            <button class="button-link" onclick="goToSection('section3')">Quà tới đeiii 🥰</button>
+        </div>
     </div>
 
     <!-- SECTION 3: Envelope -->
     <div id="section3" class="section">
-        <div class="envelope-instruction">📩 Tap the envelope to open your special message!</div>
         <div class="envelope-wrapper">
+            <div class="envelope-instruction">📩 NHẤP VÀO PHONG THƯ ĐỂ MỞ QUÀ NHÓ!</div>
             <div id="envelope" class="close">
-            <div class="front flap"></div>
-            <div class="front pocket"></div>
-            <div class="letter">
-                <div class="words line1"></div>
-                <div class="words line2"></div>
-                <div class="words line3"></div>
-                <div class="words line4"></div>
-            </div>
-
-            <div class="flying-hearts">
-                <div class="flying-heart a1"></div>
-                <div class="flying-heart a2"></div>
-                <div class="flying-heart a3"></div>
+                <div class="front flap"></div>
+                <div class="front pocket"></div>
+                <div class="letter">
+                    <div class="words line1"></div>
+                    <div class="words line2"></div>
+                    <div class="words line3"></div>
+                    <div class="words line4"></div>
+                </div>
+                <div class="flying-hearts">
+                    <div class="flying-heart a1"></div>
+                    <div class="flying-heart a2"></div>
+                    <div class="flying-heart a3"></div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- SECTION 4: Date Details -->
+    <!-- SECTION 4: Date Details (Formerly Section 3) -->
     <div id="section4" class="section">
-        <div class="heart">💕</div>
-        <div class="heart">💖</div>
-        <div class="heart">💗</div>
-        <div class="heart">💝</div>
-        <div class="heart">💞</div>
-
         <div class="container">
-            <h1>💝 Chi Tiết Buổi Hẹn Đặc Biệt 💝</h1>
-            <p class="subtitle">Một ngày đáng nhớ dành riêng cho nàng ✨</p>
+            <h1>✨ NGÀY HẸN ĐẶC BIỆT ✨</h1>
+            <p class="subtitle">Đừng quên thêm vào lịch của nàng nha!</p>
 
             <div class="details-grid">
                 <div class="detail-card">
-                    <h2>📅 Thời Gian</h2>
-                    <p><strong>Ngày:</strong> Thứ năm Ngày 04/12/2025<br>
-                    <strong>Giờ:</strong> 18:00<br>
-                    <em>Giờ giấc để thông báo thui chứ tui muốn qua đón nàng í 😊</em></p>
+                    <h2>📅 Ngày</h2>
+                    <p>Thứ Năm, ngày 04 tháng 12 năm 2025</p>
                 </div>
-
                 <div class="detail-card">
-                    <h2>📍 Địa Điểm</h2>
-                    <p><strong>[Tên Địa Điểm]</strong><br>
-                    [Địa chỉ cụ thể]<br>
-                    <em>Grab car chở hoàng tử sẽ tới đón nàng tại 226/15 Thái Phiên hehe</em></p>
+                    <h2>⏰ Thời gian</h2>
+                    <p>19:00 PM - Tới khi buồn ngủ luôn</p>
                 </div>
-
+                <div class="detail-card">
+                    <h2>📍 Địa điểm</h2>
+                    <p> 👉🏻<a href="https://linktr.ee/apero_saigon?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExMXZwR2FpTjB6STFrbUZrUnNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR5tj8b7tgA5263HcHX_DR_Id-6rzFJhkgreyJSX49cXPWz9O4fjZvCZ0VO38Q_aem_IqwH11cN-vGEeDWmbVWcOw" target="_blank" class=location-link>Apero Bistro & Bar</a> - Nhà hàng Pasta
+                        <br> Địa chỉ: 45 Nguyễn Duy Hiệu, Thảo Điền, Q2, TP.HCM
+                        <br> Backup cho bạn lựa: 
+                        <br>👉🏻<a href="https://laivn.com/?fbclid=IwZXh0bgNhZW0CMTAAYnJpZBExMXZwR2FpTjB6STFrbUZrUnNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR4J3sc844SWrc-jRCO-inIqZ4ep-mgGk8yUPK1kSh7E1yAYQWgqLGW4x6k5lg_aem_vlsRqs1oB4z2HEDdzWvo-w" target="_blank" class=location-link>Lai Restaurant</a> - Nơi quen thuộc
+                        <br>👉🏻<a href="https://www.facebook.com/pazzi.fad/?locale=vi_VN" target="_blank" class=location-link>Pazzi Pizza</a>                     
+                    </p>
+                </div>
                 <div class="detail-card">
                     <h2>👗 Dress Code</h2>
-                    <p><strong>Trang phục:</strong> Elegant chanh sả ngầu ngầu<br>
-                    <strong>Màu gợi ý:</strong> <span style="color: #0a2472">Xanh</span>, Trắng, <span style="color:black">Đen</span>, <span style="color:#ffda68">Vàng kim</span><br>
-                    <em>Nàng mặc gì cũng đẹp thui ó! 💕</em></p>
-                </div>
-
-                <div class="detail-card">
-                    <h2>🎁 Hoạt Động</h2>
-                    <p>[Mô tả ngắn gọn về hoạt động]<br>
-                    <em>Và còn nhiều bất ngờ nữa... 🎉</em></p>
+                    <p>Chỉ cần nụ cười của bạn thui 🤭<br>(Mình sẽ mặc vest xanh thẫm và áo phông trắng, style elegant nhé)</p>
                 </div>
             </div>
 
             <div class="special-note">
-                <h2>💌 <span class="gradient-text">LỜI NHẮN ĐẶC BIỆT</span></h2>
-                <p>Bạn đã vượt qua kì thi một cách cực kỳ xuất sắc ý!</p>
-                <p>Đây là kỷ niệm nho nhỏ để lưu trữ lại sự cố gắng không ngừng của bạn💕</p>
-                <p>Và biết đâu cũng có thể có thêm quà tặng bất ngờ nữa 😉</p>
+                <h2>💌 Ghi chú nho nhỏ</h2>
+                <p><span class="gradient-text">Đừng lo lắng gì cả nếu thấy đây là một lời mời quá trịnh trọng nha. Nếu do cấp bách hay có việc gì trước đó mà bạn muốn đổi lịch thì cứ bảo mình nha</span> 🥰. 
+                    <br><span class="gradient-text">Mình sẽ chuẩn bị tốt nhất cho sự thoải mái của nàng</span>✨</p>
             </div>
 
             <div class="countdown">
-                <h3>⏰ Đếm Ngược Đến Ngày Hẹn</h3>
-                <div class="countdown-timer">
+                <h3>⏳ Đếm ngược đến ngày hẹn...</h3>
+                <div class="countdown-timer" id="countdown">
                     <div class="time-unit">
                         <span class="number" id="days">00</span>
                         <span class="label">Ngày</span>
@@ -138,140 +131,143 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Floating hearts background -->
+        <div class="heart">❤️</div>
+        <div class="heart">💖</div>
+        <div class="heart">💕</div>
+        <div class="heart">💗</div>
+        <div class="heart">💓</div>
     </div>
 
-    <!-- Confetti library -->
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-
     <script>
+        // Audio Control
         const audio1 = document.getElementById('audio1');
         const audio2 = document.getElementById('audio2');
         const audio3 = document.getElementById('audio3');
-        let currentSection = 0;
-        let confettiInterval = null;
-        let envelopeOpened = false;
 
-        // Intro overlay click
-        document.getElementById('intro-overlay').addEventListener('click', () => {
-            audio1.volume = 0.3;
-            audio1.play().catch(err => console.log('Audio blocked:', err));
-            goToSection(1);
-        });
+        function stopAllAudio() {
+            audio1.pause();
+            audio1.currentTime = 0;
+            audio2.pause();
+            audio2.currentTime = 0;
+            audio3.pause();
+            audio3.currentTime = 0;
+        }
 
-        function goToSection(sectionNum) {
-            // Hide current section
-            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-            
-            // Show new section
-            const targetSection = document.getElementById(`section${sectionNum}`);
-            targetSection.classList.add('active');
-            currentSection = sectionNum;
+        function playAudio(audio) {
+            // Try to play audio, handle potential autoplay restrictions
+            const playPromise = audio.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                    console.log("Audio play failed (likely autoplay policy):", error);
+                });
+            }
+        }
 
-            // Handle audio transitions
-            if (sectionNum === 1) {
+        // Section Navigation
+        function goToSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(sec => {
+                sec.classList.remove('active');
+            });
+
+            // Show target section
+            const targetSection = document.getElementById(sectionId);
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+
+            // Audio Logic based on section
+            if (sectionId === 'section1') {
                 stopAllAudio();
-                audio1.currentTime = 0;
-                audio1.play();
-            } else if (sectionNum === 2) {
+                audio1.volume = 0.3;
+                playAudio(audio1);
+            } else if (sectionId === 'section2') {
+                playAudio(audio2);
+                triggerConfetti();
+            } else if (sectionId === 'section3') {
+                // Envelope section - maybe quiet or soft sound?
+                // For now, keep audio2 playing or stop? Let's stop audio2 to focus on envelope
+                stopAllAudio(); 
+            } else if (sectionId === 'section4') {
                 stopAllAudio();
-                audio2.currentTime = 0;
-                audio2.play();
-                startConfetti();
-            } else if (sectionNum === 3) {
-                stopAllAudio();
-                stopConfetti();
-                // Reset envelope to closed state
-                document.getElementById('envelope').classList.remove('open');
-                document.getElementById('envelope').classList.add('close');
-            } else if (sectionNum === 4) {
-                stopAllAudio();
-                audio3.currentTime = 0;
-                audio3.play();
+                playAudio(audio3);
+                document.body.classList.add('section4-active');
                 startCountdown();
             }
         }
 
-
-        function stopAllAudio() {
-            [audio1, audio2, audio3].forEach(audio => {
-                audio.pause();
-                audio.currentTime = 0;
+        // Envelope Interaction
+        const envelope = document.getElementById('envelope');
+        if (envelope) {
+            envelope.addEventListener('click', () => {
+                envelope.classList.remove('close');
+                envelope.classList.add('open');
+                
+                // After animation, go to section 4
+                setTimeout(() => {
+                    goToSection('section4');
+                }, 4000); // Wait for envelope open animation
             });
         }
 
-        function startConfetti() {
-            const duration = 5000;
+        // Confetti Effect
+        function triggerConfetti() {
+            const duration = 3000;
             const animationEnd = Date.now() + duration;
-            const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 999 };
+            const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
 
             function randomInRange(min, max) {
                 return Math.random() * (max - min) + min;
             }
 
-            confettiInterval = setInterval(function() {
+            const interval = setInterval(function() {
                 const timeLeft = animationEnd - Date.now();
 
                 if (timeLeft <= 0) {
-                    return clearInterval(confettiInterval);
+                    return clearInterval(interval);
                 }
 
                 const particleCount = 50 * (timeLeft / duration);
-                confetti({
-                    ...defaults,
-                    particleCount,
-                    origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 }
-                });
-                confetti({
-                    ...defaults,
-                    particleCount,
-                    origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 }
-                });
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+                confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
             }, 250);
         }
 
-        function stopConfetti() {
-            if (confettiInterval) {
-                clearInterval(confettiInterval);
-            }
-        }
-
+        // Countdown Timer
         function startCountdown() {
-            const dateOfDate = new Date("December 04, 2025 19:00:00").getTime();
+            const targetDate = new Date("December 04, 2025 19:00:00").getTime();
 
-            const countdown = setInterval(function() {
+            const timerInterval = setInterval(function() {
                 const now = new Date().getTime();
-                const distance = dateOfDate - now;
+                const distance = targetDate - now;
+
+                if (distance < 0) {
+                    clearInterval(timerInterval);
+                    document.getElementById("countdown").innerHTML = "<div class='time-unit' style='width:100%'><span class='number'>It's Time!</span></div>";
+                    return;
+                }
 
                 const days = Math.floor(distance / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                document.getElementById("days").textContent = String(days).padStart(2, '0');
-                document.getElementById("hours").textContent = String(hours).padStart(2, '0');
-                document.getElementById("minutes").textContent = String(minutes).padStart(2, '0');
-                document.getElementById("seconds").textContent = String(seconds).padStart(2, '0');
-
-                if (distance < 0) {
-                    clearInterval(countdown);
-                    document.querySelector('.countdown-timer').innerHTML = "<h2 style='color: #db2777; font-size: 2rem;'>🎉 Hôm nay là ngày hẹn! 🎉</h2>";
-                }
+                document.getElementById("days").innerText = days.toString().padStart(2, '0');
+                document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+                document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+                document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
             }, 1000);
         }
-        document.addEventListener("DOMContentLoaded", function(){
-            const envelope = document.getElementById('envelope');
-            envelope.addEventListener('click', () => {
-                if (!envelopeOpened) {
-                    envelope.classList.remove('close');
-                    envelope.classList.add('open');
-                    envelopeOpened = true;
 
-                    // After animation, go to section 4
-                    setTimeout(() => {
-                        goToSection(4);
-                        document.getElementById('section4').classList.add('active');
-                    }, 2000);
-                }
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            // Start with intro overlay interactions if needed
+            const intro = document.getElementById('intro-overlay');
+            intro.addEventListener('click', () => {
+                goToSection('section1');
             });
         });
     </script>
